@@ -19,4 +19,6 @@ class Measurements(models.Model):
     class Meta:
         ordering = ['-Day_created']
 
+    def __str__(self):
+        return str(self.Day_created)
 
